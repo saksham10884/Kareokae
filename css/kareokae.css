@@ -1,0 +1,674 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Parkinsans:wght@300..800&display=swap');
+::-webkit-scrollbar {
+    width: 0px; /* Width of the scrollbar */
+    height: 0px; /* Height of the scrollbar (for horizontal bars) */
+}
+
+::-webkit-scrollbar-track {
+    background: #2c2c2c; /* Background of the track */
+    border-radius: 100px; /* Rounded edges */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555; /* Color of the scrollbar thumb */
+    border-radius: 100px; /* Rounded edges */
+    border: 0px solid #2c2c2c; /* Adds space around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #777; /* Brighter color when hovered */
+}
+
+/* Scrollbar for Firefox */
+* {
+    scrollbar-width: thin; /* Makes the scrollbar thinner */
+    scrollbar-color: #555 #2c2c2c; /* Thumb color and track color */
+}
+
+/* Example for Edge/Internet Explorer */
+body {
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    
+    overflow-x: hidden;
+}
+:root{
+    --a:0;
+}
+body{
+    background-color: rgb(8, 8, 8);
+    color: white;
+}
+#logo{
+    height: 10.5vh;
+    border-radius: 12px;
+}
+.header{
+    height: 11vh;
+    position: relative;
+}
+.home{
+    background-color: rgb(49, 46, 47);
+    padding: 0 1vw;
+    height: 7vh;
+    position: absolute;
+    bottom: 0.8vh;
+    left: 28.5vw;
+    border-radius: 110vh;
+}
+#search{
+    position: absolute;
+    bottom: 0.8vh;
+    left: 32vw;
+    height: 5vh;
+    width: 20vw;
+    border-radius: 20px;
+}
+.acc{
+    flex-wrap: nowrap;
+    gap: 6px;
+    position: absolute;
+    bottom: 0.8vh;
+    right: 0vw;
+    height: fit-content;
+}
+.bell{
+    height: 5vh;
+    background-color: white;
+    border-radius: 110vh;
+}
+.login{
+    color: white;
+    text-decoration: none;
+    background-color: rgb(49, 46, 47);
+    padding: 2vh 2vw;
+    border-radius: 100vh;
+}
+.searchbar{
+    padding-left: 2%;
+}
+.container{
+    flex-wrap: nowrap;
+    gap: 0.5vw;
+}
+.left{
+    background-color: rgb(39, 37, 37);
+    height: 70vh;
+    width: 30vw;
+    border-radius: 12px;
+    position: relative;
+}
+.right{
+    background-color: rgb(39, 37, 37);
+    height: 70vh;
+    width: 69vw;
+    border-radius: 12px;
+    position: relative;
+    overflow-y: scroll;
+    /* Custom Scrollbar for Modern Browsers */
+}
+.lib{
+    gap: 8px;
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500px;
+    font-size: large;
+    width: fit-content;
+    flex-wrap: nowrap;
+    position: absolute;
+    top: 5vh;
+    left: 2vw;
+}
+.lib img{
+    width: 2vw;
+}
+.left .plus{
+    width: 1.8vw;
+    position: absolute;
+    top: 5vh;
+    left: 22vw;
+}
+.left .more{
+    width: 2vw;
+    position: absolute;
+    top: 5vh;
+    right: 2vw;
+}
+.left .create-playlist{
+    background-color:  rgb(61, 58, 58);
+    position: absolute;
+    top: 15vh;
+    left: 1vw;
+    width: 26vw;
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500px;
+    padding: 2vh;
+    border-radius: 10px;
+}
+.left .playlist{
+    color: black;
+    background-color: white;
+    width: fit-content;
+    margin-top: 12px;
+    padding: 10px;
+    border-radius: 100px;
+}
+.left .playlist:hover{
+    color: black;
+    background-color: white;
+    width: fit-content;
+    margin-top: 12px;
+    padding: 10px;
+    border-radius: 100px;
+    font-weight: 500;
+    text-align: center;
+}
+.left .browse-podcast{
+    background-color:  rgb(61, 58, 58);
+    position: absolute;
+    top: 40vh;
+    left: 1vw;
+    width: 26vw;
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500px;
+    padding: 2vh;
+    border-radius: 10px;
+}
+.left .podcast{
+    color: black;
+    background-color: white;
+    width: fit-content;
+    margin-top: 12px;
+    padding: 10px;
+    border-radius: 100px;
+    justify-content: center;
+}
+.left .podcast:hover{
+    color: black;
+    background-color: white;
+    width: fit-content;
+    margin-top: 12px;
+    padding: 10px;
+    border-radius: 100px;
+    text-align: center;
+    font-weight: 500;
+}
+.right .header{
+    position: absolute;
+    gap: 1vw;
+    padding-left: 20px;
+    height: fit-content;
+    top: 2vh;
+}
+.right .header .option{
+    color: white;
+    background-color: rgb(61, 58, 58);
+    width: fit-content;
+    padding: 10px;
+    border-radius: 20px;
+    height: fit-content;
+}
+.right .header .option:hover{
+    color: black;
+    background-color: white;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 20px;
+    height: fit-content;
+}
+.right h2{
+    position: absolute;
+    margin-left: 20px;
+    top: 8vh;
+    font-family: "Parkinsans", sans-serif;
+    font-weight: 500;
+}
+.right h2:hover{
+    position: absolute;
+    margin-left: 20px;
+    top: 8vh;
+    font-family: "Parkinsans", sans-serif;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.right .cards{
+    position: absolute;
+    top: 18vh;
+    margin: 0px 20px;
+    gap: 4.4px;
+    flex-wrap: wrap;
+    overflow-x: none;
+    overflow-y: scroll;
+    width: 55vw;
+    height: 34vh;
+    scrollbar-width: 0px;
+}
+.right .cards a{
+    font-family: "Parkinsans", sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    width: 12.7vw;
+    border-radius: 12px;
+    position: relative;
+    justify-items: center;
+    margin-bottom: 17px;
+}
+.right .cards a:hover{
+    background-color: rgb(61, 58, 58);
+    border-radius: 12px;
+    --a:1;
+}
+.right .cards img{
+    width: 11vw;
+    height: 25vh;
+    padding: 0px;
+    padding-top: 10px;
+    margin: 0;
+}
+.forplay{
+    position: relative;
+}
+.right .playicon{
+    position: absolute;
+    display: flex;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(22, 170, 22);
+    bottom: 10px;
+    right: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    opacity: var(--a);
+    transition: all 0.5s;
+}
+.right .playicon img{
+    filter: invert(1);
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    padding: 0px;
+}
+.right .cards p{
+    padding: 0px 14px;
+    margin: 0;
+}
+.right a h3{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+    bottom: 10vh;
+    font-family: "Parkinsans", sans-serif;
+    font-weight: 500;
+}
+.right .songs{
+    position: absolute;
+    top: 62vh;
+    margin-left: 20px;
+    width: 60vw;
+}
+.right .songs ul{
+    padding: 0px;
+    padding-left: 30px;
+    margin: 0;
+    list-style-type: none;
+}
+.right .songs ul div{
+    cursor: pointer;
+    background-color: rgb(61, 58, 58);
+    height: 10vh;
+    width: 50vw;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+    align-items: center;
+    border-radius: 10px;
+    font-family: "Parkinsans", sans-serif;
+    font-size: 15px;
+    position: relative;
+}
+.right .songs ul div:hover{
+    background-color: rgb(54, 51, 51);
+    font-weight: 300;
+}
+.right .songs div{
+    display: flex;
+}
+.right .songs ul li{
+    margin: 0;
+    padding: 0 10px;
+}
+.right .songs .music{
+    filter: invert(1);
+    width: 20px;
+    padding: 0 10px;
+    margin: 0;
+    display: "";
+}
+.playbar{
+    position: relative;
+    bottom: 0px;
+    height: 14vh;
+    background-color: rgb(39, 37, 37);
+    margin: 0;
+    padding: 0;
+    margin-top: 12px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.playbar .options img{
+    width: 35px;
+    filter: invert(1);
+    cursor: pointer;
+}
+.playbar .options{
+    position: absolute;
+    display: flex;
+    flex-wrap: nowrap;
+    top: 1vh;
+    gap: 12px;
+}
+.playbar #seekbar{
+    position: absolute;
+    height: 5px;
+    width: 60vw;
+    background-color: rgb(0, 0, 0);
+    bottom: 4vh;
+    cursor: pointer;
+}
+#seekbar #circle{
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    bottom: -0.4vh;
+    border-radius: 10px;
+    left: 0%;
+    transition: left 0.1s;
+    cursor: pointer;
+}
+#bar{
+    position: absolute;
+    height: 5px;
+    width: 0%;
+    background-color: rgba(226, 226, 226, 0.63);
+    bottom: 0vh;
+    z-index: 1;
+    transition:linear 0.1s;
+}
+#info{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    height: 12vh;
+    width: 17vw;
+    left: 2vw;
+    align-content: center;
+    font-family: "Parkinsans", sans-serif;
+}
+#time{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    height: 5vh;
+    width: 14vw;
+    right: 4vw;
+    bottom: 2vh;
+    align-content: center;
+    font-family: "Parkinsans", sans-serif;
+}
+@media (max-width: 1300px) {
+    .acc{
+        width: 20vw;
+    }
+    .bell{
+        height: 4vh;
+    }
+    .login{
+        width: 10vw;
+        display: grid;
+        justify-content: center;
+    }
+    .left{
+        position: absolute;
+        left:-100%;
+        z-index: 1;
+    }
+    .right{
+        width: 99vw;
+    }
+    .right .cards{
+        flex-wrap: nowrap;
+    }
+    .home{
+        height: 58px;
+        width: 44px;
+        display: grid;
+        border-radius: 100%;
+    }
+    .home img{
+        width: 4vw;
+    }
+    .cards{
+        width: 95vw;
+    }
+    #search{
+        left: 37vw;
+        width: 31vw;
+    }
+    #info{
+        width: 17vw;
+    }
+    .playbar #seekbar{
+        width: 98%;
+        bottom: 1vh;
+    }
+    #time{
+        bottom: 2vh;
+        right: 0vw;
+        width: 9vw;
+    }
+    #info{
+        height: 5vh;
+        width: 69vw;
+        bottom: 4vh;
+    }
+    .playbar .options{
+        top: 12px;
+    }
+    .name{
+        width: 45vw;
+        overflow: hidden;
+        height: 3vh;
+    }
+}
+@media (max-width:1038px){
+    #search{
+        left: 37vw;
+        width: 31vw;
+    }
+    .home{
+        height: 58px;
+        width: 44px;
+        display: grid;
+    }
+    .right .cards{
+        width: 93vw;
+        overflow-x: scroll;
+        top: 13vh;
+    }
+    .right .cards a{
+        width: 30vw;
+        justify-items: center;
+    }
+    .right .cards a img{
+        width: 25vw;
+    }
+    .right a h3{
+        bottom: 22vh;
+    }
+    .right .songs{
+        top: 49vh;
+    }
+    .right .songs ul div{
+        width: 84vw;
+    }
+    #info{
+        width: 17vw;
+    }
+    .playbar #seekbar{
+        width: 98%;
+        bottom: 1vh;
+    }
+    #time{
+        bottom: 2vh;
+        right: 0vw;
+        width: 11vw;
+    }
+    #info{
+        height: 5vh;
+        width: 69vw;
+        bottom: 4vh;
+    }
+    .playbar .options{
+        top: 12px;
+    }
+    .name{
+        width: 45vw;
+        overflow: hidden;
+        height: 3vh;
+    }
+}
+@media (max-width:853px){
+    #search{
+        left: 37vw;
+        width: 31vw;
+    }
+    .home{
+        height: 58px;
+        width: 44px;
+        display: grid;
+    }
+    .home img{
+        width: 5vw;
+    }
+    .right .cards{
+        width: 93vw;
+        overflow-x: scroll;
+        gap: 20px;
+        top: 14vh;
+    }
+    .right .cards a{
+        width: 32vw;
+    }
+    .right .cards a img{
+        width: 29vw;
+    }
+    .right a h3{
+        bottom: 21vh;
+    }
+    .right .songs{
+        top: 51vh;
+    }
+    .right .songs ul div{
+        width: 80vw;
+    }
+    .playbar #seekbar{
+        width: 98%;
+        bottom: 1vh;
+    }
+    #time{
+        bottom: 2vh;
+        right: 10px;
+        width: fit-content;
+    }
+    #info{
+        height: 5vh;
+        width: 69vw;
+        bottom: 4vh;
+    }
+    .playbar .options{
+        top: 12px;
+    }
+    .name{
+        width: 45vw;
+        overflow: hidden;
+        height: 3vh;
+    }
+}
+@media (max-width:540px){
+    .right{
+        width: 96vw;
+    }
+    .login{
+        width: 0px;
+        height: 0px;
+        display: none;
+    }
+    .right .cards{
+        top: 15vh;
+        width: 87vw;
+    }
+    .right .cards a{
+        width: 57vw;
+    }
+    .right .cards a img{
+        width: 49vw;
+    }
+    .right a h3{
+        bottom: 19vh;
+    }
+    .right .songs{
+        top: 53vh;
+    }
+    #search{
+        height: 4vh;
+        width: 38vw;
+        left: 55vw;
+    }
+    .home{
+        display: none;
+    }
+    .playbar #seekbar{
+        width: 98%;
+        bottom: 1vh;
+    }
+    #time{
+        bottom: 2vh;
+        right: 10px;
+        width: fit-content;
+    }
+    #info{
+        height: 5vh;
+        width: 69vw;
+        bottom: 4vh;
+    }
+    .playbar{
+        position: relative;
+        bottom: 0px;
+    }
+    .playbar .options{
+        top: 1px;
+    }
+    .name{
+        width: 45vw;
+        overflow: hidden;
+        height: 3vh;
+    }
+    .acc{
+        height: 0px;
+        width: 0px;
+        display: none;
+    }
+    .bell{
+        height: 0px;
+        width: 0px;
+    }
+    .right .songs ul{
+        padding-left: 0px;
+    }
+}

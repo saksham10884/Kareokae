@@ -1,0 +1,16 @@
+.flex{
+    display: flex;
+}
+.justify{
+    justify-content: center;
+}
+.align{
+    align-content: center;
+}
+.invert{
+    filter: invert(1);
+}
+.a{
+    color: white;
+    text-decoration: none;
+}
