@@ -165,5 +165,5 @@ async function writesongs(link){
         playsong(src,song,artist)
     })
 }
-let link="/songs/mostpopular/"
+let link="https://saksham10884.github.io/songs/mostpopular.html"
 writesongs(link)
