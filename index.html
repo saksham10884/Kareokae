@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kareokae-spotify_clone</title>
+    <link rel="stylesheet" href="css/kareokae.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="shortcut icon" href="logo/kareokae-logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="header flex">
+        <a href="">
+            <img id="logo" src="logo/kareokae-logo.png" alt="">
+        </a>
+        <a href="kareokae.html">
+            <div class="home justify align">
+                <img src="logo/home.png" alt="">
+            </div>
+        </a>
+        <form action="">
+            <input class="searchbar" type="text" name="search" id="search" placeholder="Enter song name">
+        </form>
+        <div class="acc flex">
+            <a href="">
+                <img class="bell" src="logo/bellicon.png" alt="">
+            </a>
+            <a href="/login.html">
+                <div class="login">
+                    Login
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="container flex">
+        <div class="left">
+            <div class="top flex" style="width: fit-content; flex-wrap: nowrap;">
+                <a href="" style="text-decoration: none; color: white; width: fit-content;">
+                    <div class="lib flex">
+                        <img class="invert" src="logo/library.svg" alt="">
+                        Your Library
+                    </div>
+                </a>
+                <a href="">
+                    <img class="plus invert" src="logo/plus.svg" alt="">
+                </a>
+                <a href="">
+                    <img class="more invert" src="logo/right-arrow.svg" alt="">
+                </a>
+            </div>
+            <div class="create-playlist">
+                <h3 style="margin:0px; padding:0px">Create your first playlist</h3>
+                It's easy we will help you
+                <a style="text-decoration: none;" href="">
+                    <div class="playlist">
+                        Create Playlist
+                    </div>
+                </a>
+            </div>
+            <div class="browse-podcast">
+                <h3 style="margin: 0; padding: 0;">Let's find some podcasts to follow</h3>
+                We'll keep you updated on new episodes
+                <a style="text-decoration: none;" href="">
+                    <div class="podcast">
+                        Browse podcasts
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="right">
+            <div class="header flex">
+                <a href="" style="text-decoration: none;">
+                    <div class="option">All</div>
+                </a>
+                <a href="" style="text-decoration: none;">
+                    <div class="option">Music</div>
+                </a>
+                <a href="" style="text-decoration: none;">
+                    <div class="option">Podcast</div>
+                </a>
+            </div>
+            <a href="" class="a">
+                <h2>Kareokae Albums</h2>
+            </a>
+            <div class="cards flex">
+                <a href="old.html" class="a card">
+                    <div class="forplay">
+                        <img src="https://c.saavncdn.com/413/Old-Is-Gold-Kishore-Kumar-Hits-Hindi-2023-20230922122250-500x500.jpg" alt="">
+                        <div class="playicon">
+                            <img src="logo/playicon.svg" alt="">
+                        </div>
+                    </div>
+                    <p>Hits of Kishore Kumar</p>
+                </a>
+                <a href="hollywood.html" class="a card">
+                    <div class="forplay">
+                        <img src="https://static.vecteezy.com/system/resources/previews/026/656/826/non_2x/ai-generated-ai-generative-vintage-retro-classic-hotrod-muscle-car-vintage-retro-on-california-road-trip-graphic-art-photo.jpg" alt="">
+                        <div class="playicon">
+                            <img src="logo/playicon.svg" alt="">
+                        </div>
+                    </div>
+                    <p>Hollywood Hits</p>
+                </a>
+                <a href="punjabihits.html" class="a card">
+                    <div class="forplay">
+                        <img src="https://static.tuneyou.com/images/logos/500_500/64/14364/HungamaPunjabiHits_6.jpg" alt="">
+                        <div class="playicon">
+                            <img src="logo/playicon.svg" alt="">
+                        </div>
+                    </div>
+                    <p>Punjabi hits</p>
+                </a>
+                <a href="bollywood.html" class="a card">
+                    <div class="forplay">
+                        <img src="https://a10.gaanacdn.com/gn_pl_img/playlists/jBr3gybR1m/r3gex0lJbR/size_l_1515080889.jpg" alt="">
+                        <div class="playicon">
+                            <img src="logo/playicon.svg" alt="">
+                        </div>
+                    </div>
+                    <p>Bollywood hits</p>
+                </a>
+                <a href="most.html" class="a card">
+                    <div class="forplay">
+                        <img src="https://cdn.pixabay.com/photo/2017/10/08/17/22/cello-2830670_960_720.jpg" alt="">
+                        <div class="playicon">
+                            <img src="logo/playicon.svg" alt="">
+                        </div>
+                    </div>
+                    <p>Most popular</p>
+                </a>
+            </div>
+            <a href="" class="a">
+                <h3>You may also like</h3>
+            </a>
+            <div class="songs">
+                <ul class="songslist">
+                </ul>
+            </div>
+            <div class="ai">
+                
+            </div>
+        </div>
+    </div>
+    <div class="playbar">
+        <div class="options">
+            <div>
+                <img id="previous" src="logo/previous.svg" alt="">
+            </div>
+            <div>
+                <img id="play" src="logo/play.svg" alt="">
+            </div>
+            <div>
+                <img id="next" src="logo/next.svg" alt="">
+            </div>
+        </div>
+        <div id="seekbar">
+            <div id="circle">
+            </div>
+            <div id="bar">
+            </div>
+        </div>
+        <div id="info">
+        </div>
+        <div id="time">
+        </div>
+    </div>
+    <script src="/kareokae.js"></script>
+</body>
+</html>
