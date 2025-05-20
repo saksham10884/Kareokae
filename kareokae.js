@@ -101,8 +101,9 @@ async function writesongs(link){
     console.log(songs)
     let w=document.querySelector(".songslist")
     for(i of songs){
-        
-        let name=i.split(".")[0]
+        let l=i.split("kareokae/")[1]
+        let a=l.replaceAll("%20"," ")
+        let name=a.split(".")[0]
         let html=`<div><img class="music" src="logo/music.svg" alt=""><li>${name}</li></div>
         `
         w.innerHTML=w.innerHTML+html
@@ -110,7 +111,7 @@ async function writesongs(link){
     Array.from(document.querySelector(".songslist").getElementsByTagName("div")).forEach(e=>{
         e.addEventListener("click",()=>{
             let song=e.getElementsByTagName("li")[0].innerText
-            let src="songs/alsolike/"+song+".mp3"
+            let src="saksham10884.github.io/songs/"+song+".mp3"
             let name=song.split("-")[0]
             let artist=song.split("-")[1]
             playsong(src,name,artist)
