@@ -85,7 +85,6 @@ function playsong(src,name,artist){
 }
 async function getsongsname(link){
     let a=await fetch(link)
-    console.log(a)
     let response=await a.text()
     console.log(response)
     let div=document.createElement("div")
