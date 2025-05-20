@@ -100,7 +100,7 @@ async function writesongs(link){
     let songs=await getsongsname(link)
     let w=document.querySelector(".songslist")
     for(i of songs){
-        let l=(i.split("/songs/mostpopular/"))[1]
+        let l=(i.split("kareokae/"))[1]
         let a=(l.replaceAll("%20"," "))
         let name=a.split(".")[0]
         let html=`<div><img class="music" src="logo/music.svg" alt=""><li>${name}</li></div>
@@ -110,7 +110,7 @@ async function writesongs(link){
     Array.from(document.querySelector(".songslist").getElementsByTagName("div")).forEach(e=>{
         e.addEventListener("click",()=>{
             let song=e.getElementsByTagName("li")[0].innerText
-            let src="songs/mostpopular/"+song+".mp3"
+            let src="https://saksham10884.github.io/songs/"+song+".mp3"
             let name=song.split("-")[0]
             let artist=song.split("-")[1]
             playsong(src,name,artist)
@@ -140,7 +140,7 @@ async function writesongs(link){
         if(index>0){
             src=songsUl[index-1]
         }
-        let l=(src.split("/songs/mostpopular/"))[1]
+        let l=(src.split("kareokae/"))[1]
         let a=(l.replaceAll("%20"," "))
         let name=a.split(".")[0]
         let song=name.split("-")[0]
@@ -157,7 +157,7 @@ async function writesongs(link){
         if(index< songsUl.length-1){
             src=songsUl[index+1]
         }
-        let l=(src.split("/songs/mostpopular/"))[1]
+        let l=(src.split("kareokae/"))[1]
         let a=(l.replaceAll("%20"," "))
         let name=a.split(".")[0]
         let song=name.split("-")[0]
