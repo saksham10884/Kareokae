@@ -92,7 +92,7 @@ async function getsongsname(link){
     div.innerHTML=response
     let as=div.getElementsByTagName("a")
     for( i of as){
-        if(i.href.includes("alsolike/")){
+        if(i.href.includes(".mp3")){
             songsUl.push(i.href)
         }
     }
@@ -102,8 +102,7 @@ async function writesongs(link){
     let songs=await getsongsname(link)
     let w=document.querySelector(".songslist")
     for(i of songs){
-        let l=(i.split("/songs/alsolike/"))[1]
-        let a=(l.replaceAll("%20"," "))
+        
         let name=a.split(".")[0]
         let html=`<div><img class="music" src="logo/music.svg" alt=""><li>${name}</li></div>
         `
