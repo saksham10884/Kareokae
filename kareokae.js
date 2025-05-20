@@ -102,7 +102,7 @@ async function writesongs(link){
     let w=document.querySelector(".songslist")
     for(i of songs){
         
-        let name=a.split(".")[0]
+        let name=i.split(".")[0]
         let html=`<div><img class="music" src="logo/music.svg" alt=""><li>${name}</li></div>
         `
         w.innerHTML=w.innerHTML+html
