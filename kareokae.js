@@ -111,7 +111,7 @@ async function writesongs(link){
     Array.from(document.querySelector(".songslist").getElementsByTagName("div")).forEach(e=>{
         e.addEventListener("click",()=>{
             let song=e.getElementsByTagName("li")[0].innerText
-            let src="saksham10884.github.io/songs/"+song+".mp3"
+            let src=song+".mp3"
             let name=song.split("-")[0]
             let artist=song.split("-")[1]
             playsong(src,name,artist)
