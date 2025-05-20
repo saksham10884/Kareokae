@@ -132,6 +132,12 @@ async function writesongs(link){
         document.getElementById("circle").style.left=point+"%"
         document.getElementById("bar").style.width=point+"%"
     })
+    document.getElementById("seekbar").addEventListener("mousedown",(e)=>{
+        let point=(e.offsetX/e.currentTarget.getBoundingClientRect().width)*100
+        audio.currentTime=(point/100)*audio.duration
+        document.getElementById("circle").style.left=point+"%"
+        document.getElementById("bar").style.width=point+"%"
+    })
     previous.addEventListener("click",()=>{
         let index=0
         index=songsUl.indexOf(audio.src)
@@ -140,7 +146,7 @@ async function writesongs(link){
         if(index>0){
             src=songsUl[index-1]
         }
-        let l=(src.split("/songs/alsolike/"))[1]
+        let l=(src.split("kareokae/"))[1]
         let a=(l.replaceAll("%20"," "))
         let name=a.split(".")[0]
         let song=name.split("-")[0]
@@ -155,7 +161,7 @@ async function writesongs(link){
         if(index< songsUl.length-1){
             src=songsUl[index+1]
         }
-        let l=(src.split("/songs/alsolike/"))[1]
+        let l=(src.split("kareokae/"))[1]
         let a=(l.replaceAll("%20"," "))
         let name=a.split(".")[0]
         let song=name.split("-")[0]
