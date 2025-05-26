@@ -130,39 +130,45 @@ async function writesongs(link){
         document.getElementById("circle").style.left=point+"%"
         document.getElementById("bar").style.width=point+"%"
     })
-    previous.addEventListener("click",()=>{
+     previous.addEventListener("click",()=>{
         let index=0
         console.log(audio.src)
         console.log(songsUl)
-        index=songsUl.indexOf(audio.src)
+        let src=audio.src.replace("songs","kareokae")
+        index=songsUl.indexOf(src)
         console.log(index)
-        let src=audio.src
         if(index>0){
             src=songsUl[index-1]
+        }
+        else{
+            src=songsUl[songsUl.length-1]
         }
         let l=(src.split("kareokae/"))[1]
         let a=(l.replaceAll("%20"," "))
         let name=a.split(".")[0]
         let song=name.split("-")[0]
         let artist=name.split("-")[1]
-        playsong(src,song,artist)
+        playsong(src.replace("kareokae","songs"),song,artist)
     })
     next.addEventListener("click",()=>{
         let index=0
         console.log(audio.src)
         console.log(songsUl)
-        index=songsUl.indexOf(audio.src)
+        let src=audio.src.replace("songs","kareokae")
+        index=songsUl.indexOf(src)
         console.log(index)
-        let src=audio.src
         if(index< songsUl.length-1){
             src=songsUl[index+1]
+        }
+        else{
+            src=songsUl[0]
         }
         let l=(src.split("kareokae/"))[1]
         let a=(l.replaceAll("%20"," "))
         let name=a.split(".")[0]
         let song=name.split("-")[0]
         let artist=name.split("-")[1]
-        playsong(src,song,artist)
+        playsong(src.replace("kareokae","songs"),song,artist)
     })
 }
 let link="https://saksham10884.github.io/songs/hollywoodsongs.html"
