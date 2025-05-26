@@ -90,7 +90,7 @@ async function getsongsname(link){
     div.innerHTML=response
     let as=div.getElementsByTagName("a")
     for( i of as){
-        if(i.href.includes("old/")){
+        if(i.href.includes(".mp3")){
             songsUl.push(i.href)
         }
     }
