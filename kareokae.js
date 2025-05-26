@@ -140,11 +140,8 @@ async function writesongs(link){
     })
     previous.addEventListener("click",()=>{
         let index=0
-        console.log(audio.src)
-        console.log(songsUl)
         let src=audio.src.replace("songs","kareokae")
         index=songsUl.indexOf(src)
-        console.log(index)
         if(index>0){
             src=songsUl[index-1]
         }
@@ -160,11 +157,8 @@ async function writesongs(link){
     })
     next.addEventListener("click",()=>{
         let index=0
-        console.log(audio.src)
-        console.log(songsUl)
         let src=audio.src.replace("songs","kareokae")
         index=songsUl.indexOf(src)
-        console.log(index)
         if(index< songsUl.length-1){
             src=songsUl[index+1]
         }
