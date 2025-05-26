@@ -98,7 +98,6 @@ async function getsongsname(link){
 }
 async function writesongs(link){
     let songs=await getsongsname(link)
-    console.log(songs)
     let w=document.querySelector(".songslist")
     for(i of songs){
         let l=i.split("kareokae/")[1]
@@ -111,7 +110,6 @@ async function writesongs(link){
     Array.from(document.querySelector(".songslist").getElementsByTagName("div")).forEach(e=>{
         e.addEventListener("click",()=>{
             let song=e.getElementsByTagName("li")[0].innerText
-            console.log(song)
             let src="https://saksham10884.github.io/songs/"+song+".mp3"
             let name=song.split("-")[0]
             let artist=song.split("-")[1]
